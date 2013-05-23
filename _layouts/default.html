@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+		      "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="ja">
+{% include head.html %}
+<body>
+<h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+{% if page.title %}
+<span class="top"> - <a href="/">{{ site.title }}</a></span>
+{% endif %}
+</h1>
+{% include header.html %}
+<div class="content">
+{{ content }}
+</div>
+{% include footer.html %}
+</body>
+</html>

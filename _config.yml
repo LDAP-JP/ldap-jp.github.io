@@ -1,0 +1,7 @@
+url: http://www2.ldap.jp
+title: "日本 LDAP ユーザー会"
+author: "LDAP-JP チーム"
+markdown: redcarpet
+redcarpet:
+  extensions: [no_intra_emphasis,tables,autolink,strikethrough,space_after_headers]
+
