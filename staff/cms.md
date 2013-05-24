@@ -90,3 +90,40 @@ $ git push
 …
 ```
 
+Jekyll 環境の構築 (Debian)
+----------------------------------------------------------------------
+
+必要なもの:
+
+  * Jekyll (Ruby)
+    * Blog 向けの静的な Web コンテンツを生成するツール。
+  * Liquid (Ruby)
+    * テンプレートエンジン。
+  * Redcarpet (Ruby)
+    * Markdown パーサー。
+    * 各種の拡張 Markdown 構文に対応している。
+  * Pygments (Python)
+    * 各種言語のソースコード等の構文色付けツール。
+
+Debian 公式の `jekyll` パッケージがありますが、バージョンが古いです。
+とりあえずこれをインストールして、依存パッケージをインストールします。
+Pygments は依存パッケージとしてインストールされますが、
+Redcarpet は依存していないので別途インストール対象として指定します。
+
+``` console
+# apt-get install jekyll ruby-redcarpet
+```
+
+RubyGems で最新の `jekyll` gem をインストールします。
+これで `/usr/local/bin/jekyll` コマンドが利用可能になります。
+
+``` console
+# gem install jekyll
+```
+
+`jekyll` パッケージをアンインストールします。
+
+``` console
+# dpkg -P jekyll
+```
+
