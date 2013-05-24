@@ -5,9 +5,25 @@ layout: default
 概要
 ----------------------------------------------------------------------
 
-GitHub Pages (http://pages.github.com/) を利用しています。
+[GitHub](https://GitHub.com/) の各種サービスを利用しています。
 
-  * https://github.com/LDAP-JP/ldap-jp.github.io
+  * LDAP-JP のページ
+    * https://github.com/LDAP-JP
+  * コンテンツのリポジトリー
+    * https://github.com/LDAP-JP/ldap-jp.github.io
+
+コンテンツの変換や Web サーバーは GitHub Pages を利用しています。
+
+  * GitHub Pages
+    * http://pages.github.com/
+
+GitHub Pages には、Markdown 形式で記述したテキストを HTML
+に変換する機能があります。変換には Jekyll (ジキル) が利用されています。
+
+  * GitHub Flavored Markdown
+    * https://help.github.com/articles/github-flavored-markdown
+  * Using Jekyll with Pages
+    * https://help.github.com/articles/using-jekyll-with-pages
 
 コンテンツ管理権限の取得
 ----------------------------------------------------------------------
@@ -36,14 +52,13 @@ $ git pull
 ```
 
 ローカルリポジトリーでコンテンツを編集、確認します。
-https://help.github.com/articles/github-flavored-markdown
 
 ``` console
 $ vi index.md
 … コンテンツを編集 …
 ```
 
-Jekyll (ジキル) がインストールされている環境なら、ローカルで
+ローカルに Jekyll がインストールされている環境なら、ローカルで
 Markdown ファイル (`\*.md`) から HTML ファイルへの変換と表示の確認が可能です。
 
 変換対象 Markdown ファイルは、先頭に MarkYAML Front Matter (「---」〜「---」)
